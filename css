@@ -1,0 +1,27 @@
+.texto1{
+    color: brown;
+    margin: auto;
+    margin-left: 300px;
+    margin-right: 100px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.navegador{
+    background-color: rgb(0, 136, 255);
+    min-width: 360px;
+    padding: 24px;
+    margin: auto;
+    text-align: justify;
+    border: 5px solid;
+    box-shadow: inset 8px 8px 20px 0px;;
+
+}
+.l1{
+    list-style: none;
+    margin-right: 10px;
+    text-align: center;
+
+ 
+    
+}
