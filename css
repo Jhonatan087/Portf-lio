@@ -1,27 +1,245 @@
-.texto1{
-    color: brown;
-    margin: auto;
-    margin-left: 300px;
-    margin-right: 100px;
-    text-align: justify;
-    margin-bottom: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navegador{
-    background-color: rgb(0, 136, 255);
-    min-width: 360px;
-    padding: 24px;
-    margin: auto;
-    text-align: justify;
-    border: 5px solid;
-    box-shadow: inset 8px 8px 20px 0px;;
-
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
 }
-.l1{
-    list-style: none;
-    margin-right: 10px;
+.flex {
+    display: flex;
+}
+h2.t {
+    color: #ffffff;
+    font-size: 40px;
     text-align: center;
+}
 
- 
+h2.t span {
+    color: #c79956;
+}
+
+.interface {
+    background-color: rgb(0, 0, 0);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #c79956;
+}
+
+header a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+   
+}
+
+header .menu a:hover {
     
+    padding: 5px 10px;
+    border-bottom: 2px solid #7fff00;
+    border-radius: 0px;
+    transform: scale(1.1);
+}
+
+header .contato a:hover {
+    padding: 5px 10px;
+    border-radius: 15px;
+    transform: scale(1.1);
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #c79956;
+    border: 0;
+    border-radius: 25px;
+    transition: .2s;
+}
+
+.contato button:hover{
+    box-shadow: 1px 0px 10px #7fff00;
+    transform: scale(1.05);
+}
+
+section .topo-site {
+    padding: 40px 4%;
+    
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.topo-site h1 {
+    color: aliceblue;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-site .txt-topo-site h1 span {
+    color: #c79956;
+}
+
+.topo-site .txt-topo-site p {
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.topo-site .img-topo-site img {
+    position: relative;
+    animation: animação 2s ease-in-out infinite alternate;
+}
+.especialidades .flex {
+    gap: 60px;
+
+}
+.especialidades .habilidades-box {
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 40px;
+    transition: .2s;
+}
+
+.habilidades-box p{
+    text-align: justify;
+
+}
+
+.especialidades .habilidades-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px rgba(243, 168, 19, 0.733);
+}
+
+.especialidades .habilidades-box img  {
+    width: 65px;
+    margin-bottom: 15px;
+        
+}
+.especialidades .habilidades-box h3 {
+   font-size: 30px;
+   
+}
+
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #ffffff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #c79956;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .midia button{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    margin: 0px 8px;
+    background-color: #c79956;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sobre button:hover {
+    box-shadow: 1px 0px 10px chartreuse;
+    transform: scale(1.05);
+}
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.404);
+}
+
+section.portfolio .flex {
+    gap: 80px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    margin-top: 80px;
+    background-color: #c79956;
+    background-size: cover;
+    border-radius: 25px;
+    background-position: 100% 0%;
+    transition: 2s;
+    
+
+
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+    box-shadow: 2px 0px 15px #c79956;
+    transform: scale(1.05);
+    
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes animação {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
 }
